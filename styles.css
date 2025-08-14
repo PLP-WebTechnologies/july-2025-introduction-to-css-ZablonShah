@@ -1,0 +1,75 @@
+/* Basic Styles and Resets */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.main-header, .main-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-bottom: 20px;
+}
+
+.main-footer {
+    margin-top: 20px;
+}
+
+/* Container for the main content */
+.container {
+    width: 80%;
+    margin: 0 auto; /* Centers the container on the page */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Common styles for all boxes */
+.box {
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    width: 45%; /* Sizing for two boxes per row */
+    padding: 20px;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Specific box model property demonstrations */
+.content-box {
+    border-color: #e74c3c;
+    padding: 30px; /* Increased padding */
+}
+
+.padding-box {
+    border-color: #3498db;
+    padding: 40px; /* Highlights the padding space */
+}
+
+.border-box {
+    border: 5px dashed #2ecc71; /* A distinct border */
+    padding: 20px;
+}
+
+.margin-box {
+    border-color: #f39c12;
+    margin: 30px; /* This will be the space around the element */
+    /* Note: The gap property on the container already handles spacing, but this shows how margin works on an individual element. */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+    }
+}
